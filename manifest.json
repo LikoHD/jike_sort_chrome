@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "jike_assist",
+  "version": "1.0",
+  "description": "对即刻用户主页的动态进行点赞数降序排序，包括优化的自动加载",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.okjike.com/u/*"],
+      "js": ["jike_sort.js"]
+    }
+  ]
+}

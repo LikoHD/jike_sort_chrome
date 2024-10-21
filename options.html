@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jike_assist 设置</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 font-sans">
+    <div class="max-w-sm mx-auto my-10 bg-white rounded-3xl shadow-lg p-6">
+        <h1 class="text-2xl font-bold text-pink-500 mb-6 text-center">jike_assist</h1>
+        
+        <div class="space-y-4">
+            <label class="flex items-center space-x-3 cursor-pointer">
+                <input type="checkbox" id="enableSort" checked class="form-checkbox h-5 w-5 text-pink-400 rounded-full">
+                <span class="text-gray-400">开启按点赞数排序功能</span>
+            </label>
+            
+            <div class="flex items-center">
+                <span class="text-gray-400 mr-3">最大下拉次数：</span>
+                <input type="number" id="maxScrollAttemptsInput" value="30" min="1" 
+                       class="form-input w-16 rounded-full border-pink-300 focus:border-pink-500 focus:ring focus:ring-pink-200 focus:ring-opacity-50 text-center">
+            </div>
+        </div>
+        
+        <button class="mt-6 w-full px-4 py-2 bg-pink-400 text-white rounded-full hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 color :#ffe411">
+            保存设置
+        </button>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
